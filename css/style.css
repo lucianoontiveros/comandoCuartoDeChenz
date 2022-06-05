@@ -1,0 +1,57 @@
+.container .lista__informativo a {
+  background-color: aquamarine;
+  color: black;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container .lista__sonidos a {
+  background-color: #2145e6;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container .lista__interactuar a {
+  background-color: #9e21e6;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container .lista__acciones a {
+  background-color: #e6214f;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container .lista__bebidas a {
+  background-color: #e67621;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.list-group-item:hover {
+  background-color: black;
+  color: white;
+}
+
+.list-group-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.disable {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+
+
+.container .lista__informativo a {
+    background-color: aquamarine;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container .lista__sonidos a {
+    background-color: rgb(33, 69, 230);
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container .lista__interactuar a {
+    background-color: rgb(158, 33, 230);
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container .lista__acciones a {
+    background-color: rgb(230, 33, 79);
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container .lista__bebidas a {
+    background-color: rgb(230, 118, 33);
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.list-group-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.disable {
+    display: none;
+}
+

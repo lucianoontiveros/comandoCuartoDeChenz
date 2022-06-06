@@ -18,7 +18,8 @@ const texto =  document.querySelectorAll(".itemText button");
 
 
 
-/* listaInformativo.addEventListener('click', () => {
+ listaInformativo.addEventListener('click', (e) => {
+     e.stopPropagation()
 
     if(informativo.classList.contains('disable')){
         informativo.classList.remove('disable');
@@ -31,7 +32,8 @@ const texto =  document.querySelectorAll(".itemText button");
     
 });
 
-listaSonidos.addEventListener('click', () => {
+listaSonidos.addEventListener('click', (e) => {
+    e.stopPropagation()
 
     if(sonidos.classList.contains('disable')){
         sonidos.classList.remove('disable');
@@ -44,7 +46,8 @@ listaSonidos.addEventListener('click', () => {
     
 });
 
-listaInteractuar.addEventListener('click', () => {
+listaInteractuar.addEventListener('click', (e) => {
+    e.stopPropagation()
 
     if(interactuar.classList.contains('disable')){
         interactuar.classList.remove('disable');
@@ -57,7 +60,8 @@ listaInteractuar.addEventListener('click', () => {
     
 });
 
-listaAcciones.addEventListener('click', () => {
+listaAcciones.addEventListener('click', (e) => {
+    e.stopPropagation()
 
     if(acciones.classList.contains('disable')){
         acciones.classList.remove('disable');
@@ -70,7 +74,8 @@ listaAcciones.addEventListener('click', () => {
     
 });
 
-listaBebidas.addEventListener('click', () => {
+listaBebidas.addEventListener('click', (e) => {
+    e.stopPropagation()
 
     if(bebidas.classList.contains('disable')){
         bebidas.classList.remove('disable');
@@ -81,13 +86,15 @@ listaBebidas.addEventListener('click', () => {
         
     }
     
-}); */
+}); 
 
 
 
-botones.forEach((boton) => boton.addEventListener("click", ()=> {
+botones.forEach((boton) => boton.addEventListener("click", (e)=> {
+    e.stopPropagation()
 
-    texto.forEach((text) => text.addEventListener("click", ()=> {
+    texto.forEach((text) => text.addEventListener("click", (e)=> {
+        e.stopPropagation()
         console.log(text.value);
        navigator.clipboard
        .writeText(text.value)

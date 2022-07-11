@@ -33,6 +33,13 @@
   margin-bottom: 1em;
 }
 
+.container .lista__brunito a {
+  background-color: #010000;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .list-group-item:hover {
   background-color: black;
   color: white;
@@ -53,5 +60,11 @@
 
 .disable {
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

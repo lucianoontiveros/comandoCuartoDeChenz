@@ -18,16 +18,16 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="https://www.twitch.tv/cuartodechenz">
-                    <img src="./img/1.ico" alt="" width="30">
+                    <img class="mb-3" src="./img/1.ico" alt="" width="30">
                   </a>
-              <a class="navbar-brand" href="#">Cuarto de Chenz</a>
+              <a class="navbar-brand" href="#gruposComandos">BrunitoPet</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Comandos</a>
+                    <a class="nav-link active" aria-current="page" href="#gruposComandos">Comandos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://www.twitch.tv/cuartodechenz">Twitch</a>
@@ -43,8 +43,61 @@
             </div>
         </nav>
 
-        <div class="list-group lista__informativo">
-            <a href="#" class="list-group-item " aria-current="true">
+        <div class="container">
+            <h1 class="text-center mt-5">BrunitoPet el bot de nuestro canal</h1>
+            <h2 class="mt-5">COMANDO TAREA</h2>
+            <p>Brunito cuenta con un registro de tareas, que puedes registrar a través del comando !tareas + más la descripción de la misma. Por ejemplo: <b>!tarea</b> Estudiar unida 1 de derecho privado. <br><br>
+            <b>Importante: Puedes agregar todas las tareas que quieras, pero recuerda que una vez terminado el stream, las mismas se borraran. Por esta razón te recomendamos que cargues las que creas que puedes realizar en las horas emisión regular del directo.</b></p>
+            <img class="mb-3" src="./img/comandotarea.png" alt="">
+            <h5 class="mt-3">REVISAR TAREAS</h5>
+            <p>Una vez cargadas tus tareas seguro querras consultarlas, simplemente debes ingresar en el chat <b>!lista</b>. De esta forma se desplegarán tus tareas las cuales tiene un numero para eliminar y marcar. Recuerda que al marcar o borrar una tarea debes tirar de nuevo la lista para revisar si el número de orden se modificó para poder seguir borrando/marcando. O utilizar <b>!pickaup</b> para marcar todas de una sola vez, o <b>!reset</b> para eliminar todas las tareas pendientes. </p>
+            <h5 class="mt-4">BORRAR UNA TAREA</h5>
+            <p>Para borrar una tarea debe ingresar en el chat el comando <b>!lista</b> para tener el detalles de las tareas registradas, y cada una de ella tendrá una opción para eliminar con un número. Para eliminarla solo resta ingresar en el chat <b>!eliminar</b> + el número de orden. Si quisiera borrar todas las tareas de una vez, simplemente ingresar <b>!reset</b></p>
+            <img class="mb-3" src="./img/eliminarOmarcar.png" alt="">
+
+            <h5 class="mt-3">MARCAR UN TAREA</h5>
+            <p>Para marcar una tarea realizada debe ingresar en el chat el comando <b>!lista</b> para tener el detalles de las tareas registradas, y cada una de ella tendrá una opción para marcar con un número. Para eliminarla solo resta ingresar en el chat <b>!eliminar + el número de orden</b>. Si quisiera marcar todas la tareas como realizadas ingresar <b></b>!pickup</p>
+            <img class="mb-3" src="./img/marcar .png" alt="">
+            <h5 class="mt-3">ESTADO</h5>
+            <ul>
+                <li>🍱 Indica el número de comidas que marcaste con los comando !merendar !cenar !almorzar !desayunar  </li>
+                <li>☕ Indica el número de infusiones que tomaste en el día registrando en el chat comandos como café, té, mate, matec, entre otros. También aumenta si ingresas comando como merienda o desayuno. </li>
+                <li>💧 Este símbolo recuenta cuantas veces tomaste agua ingresando !agua en el chat</li>
+                <li>🚽 Este símbolo recuenta cuantas veces que fuiste al baño ingresando !baño en el chat.</li>
+                <li>⌚ Este símbolo recuenta la cantidad de minutos que haz ingresado en modo focus con el comando !focus + los minutos a realizar en el chat.</li>
+                <li>💥 Este símbolo recuenta cuantas veces le tiraron !lachancla al streamer. </li>
+                <li>📖 Este símbolo recuenta cuantas tareas pendientes tienes hoy. </li>
+                <li>📗 Este símbolo recuenta cuantas tareas realizaste hoy.</li>
+                <li> 🐾  Marca las veces que le diste un croqueta a Brunito. </li>
+            </ul>
+            <img class="mb-3" src="./img/resumenDeActividades.png" alt="">
+        </div>
+
+        <div class="list-group lista__brunito" id="gruposComandos">
+            <a href="#gruposComandos" class="list-group-item " aria-current="true">
+                <h5>Funcionalidades de Brunito: </h5>
+            </a>
+            <ul class="list-group lista-grupo funcionalidades">
+                <li class="list-group-item itemText"> !tarea 
+                    <button value="!tarea" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !lista
+                    <button value="!lista" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !reset 
+                    <button value="!reset" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !pickup
+                    <button value="!pickup" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !estado
+                    <button value="!matec" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-group lista__informativo" >
+            <a href="#gruposComandos" class="list-group-item " aria-current="true">
                 <h5>Informativos: </h5>
             </a>
             <ul class="list-group lista-grupo informativo">
@@ -64,7 +117,7 @@
                     <button type="button" value='!estudio' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
                 <li class="list-group-item itemText"> !eneatipo 
-                    <button type="button" value='' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                    <button type="button" value='!eneatipo ' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
                 <li class="list-group-item itemText"> !estudioe
                     <button type="button" value='!estudioe' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
@@ -106,7 +159,7 @@
                     <button type="button" value='!sorete ' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
                 <li class="list-group-item itemText"> !spam 
-                    <button type="button" value='' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                    <button type="button" value='!spam ' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
                 <li class="list-group-item itemText"> !traductor
                     <button type="button" value='!traductor' class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
@@ -142,7 +195,7 @@
         </div>
 
         <div class="list-group lista__sonidos">
-            <a href="#" class="list-group-item " aria-current="true">
+            <a href="#gruposComandos" class="list-group-item " aria-current="true">
                 <h5>Sonidos y/o imagenes: </h5>
             </a>
             <ul class="list-group lista-grupo sonidos">
@@ -201,7 +254,7 @@
         </div>
 
         <div class="list-group lista__interactuar">
-            <a href="#" class="list-group-item " aria-current="true">
+            <a href="#gruposComandos" class="list-group-item " aria-current="true">
                 <h5>Para interactuar </h5>
             </a>
             <ul class="list-group lista-grupo interactuar">
@@ -240,12 +293,12 @@
         </div>
 
         <div class="list-group lista__acciones">
-            <a href="#" class="list-group-item " aria-current="true">
+            <a href="#gruposComandos" class="list-group-item " aria-current="true">
                 <h5>Acciones: </h5>
             </a>
             <ul class="list-group lista-grupo acciones">
                 <li class="list-group-item itemText"> !baño 
-                <button value="" ty!bañope="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                <button value="!baño " ty!bañope="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
                 <li class="list-group-item itemText"> !calentar 
                     <button value="!calentar" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
@@ -290,7 +343,7 @@
         </div>
 
         <div class="list-group lista__bebidas">
-            <a href="#" class="list-group-item " aria-current="true">
+            <a href="#gruposComandos" class="list-group-item " aria-current="true">
                 <h5>Bebidas o Infusiones: </h5>
             </a>
             <ul class="list-group lista-grupo bebidas">

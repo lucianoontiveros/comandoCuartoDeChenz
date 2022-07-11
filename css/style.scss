@@ -35,6 +35,13 @@
     margin-bottom: 1em;
 }
 
+.container .lista__brunito a {
+    background-color: rgb(1, 0, 0);
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .list-group-item:hover {
     background-color: black;
     color: white;
@@ -48,5 +55,11 @@
 
 .disable {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        display: none;
+    }
 }
 

@@ -13,6 +13,9 @@ const acciones = document.querySelector('.acciones');
 const listaBebidas= document.querySelector('.lista__bebidas');
 const bebidas = document.querySelector('.bebidas'); 
 
+const listaBrunito= document.querySelector('.lista__brunito');
+const funcionalidades = document.querySelector('.funcionalidades'); 
+
 const botones = document.querySelectorAll(".list-group-item button");
 const texto =  document.querySelectorAll(".itemText button");
 
@@ -83,6 +86,20 @@ listaBebidas.addEventListener('click', (e) => {
     } else {
         bebidas.classList.remove('active');
         bebidas.classList.add('disable');
+        
+    }
+    
+}); 
+
+listaBrunito.addEventListener('click', (e) => {
+    e.stopPropagation()
+
+    if(funcionalidades.classList.contains('disable')){
+        funcionalidades.classList.remove('disable');
+        funcionalidades.classList.add('active');
+    } else {
+        funcionalidades.classList.remove('active');
+        funcionalidades.classList.add('disable');
         
     }
     

@@ -5,6 +5,18 @@
   margin-bottom: 1em;
 }
 
+.contenedorLista {
+  list-style: none 
+}
+
+.contenedorLista li  {
+  margin-top: 2em;
+}
+
+.contenedorLista li img {
+  margin-right: 20px;
+}
+
 .container .lista__sonidos a {
   background-color: #2145e6;
   color: white;

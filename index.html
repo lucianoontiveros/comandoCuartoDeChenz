@@ -66,11 +66,11 @@
             <P>El banner estado marca las actividades que estas realizando o realizaste en el momento productivo en pantalla. Cada vez que interactúas con ciertos comandos en el chat, el mismo se registra automáticamente. Una de las funcionalidades destacadas es que marca las tareas pendientes y las realizadas del día. Este banner estará sufriendo mejorar con el trascurso de las actualizaciones. </P>
             <ul class="contenedorLista">
                 <li><img src="./img/comida.png" height="50px" width="50px"> Indica el número de comidas que marcaste con los comando !merendar !cenar !almorzar !desayunar  </li>
-                <li><img src="./img/infusion.png" height="50px" width="50px">☕ Indica el número de infusiones que tomaste en el día registrando en el chat comandos como café, té, mate, matec, entre otros. También aumenta si ingresas comando como merienda o desayuno. </li>
-                <li><img src="./img/agua.png" height="50px" width="50px">💧 Este símbolo recuenta cuantas veces tomaste agua ingresando !agua en el chat</li>
-                <li><img src="./img/lachancla.png" height="50px" width="50px">💥 Este símbolo recuenta cuantas veces le tiraron !lachancla al streamer. </li>
-                <li><img src="./img/pendientes.png" height="50px" width="50px">📖 Este símbolo recuenta cuantas tareas pendientes tienes hoy. </li>
-                <li><img src="./img/check.png" height="50px" width="50px">📗 Este símbolo recuenta cuantas tareas realizaste hoy.</li>
+                <li><img src="./img/infusion.png" height="50px" width="50px">Indica el número de infusiones que tomaste en el día registrando en el chat comandos como café, té, mate, matec, entre otros. También aumenta si ingresas comando como merienda o desayuno. </li>
+                <li><img src="./img/agua.png" height="50px" width="50px"> Este símbolo recuenta cuantas veces tomaste agua ingresando !agua en el chat</li>
+                <li><img src="./img/lachancla.png" height="50px" width="50px"> Este símbolo recuenta cuantas veces le tiraron !lachancla al streamer. </li>
+                <li><img src="./img/pendientes.png" height="50px" width="50px"> Este símbolo recuenta cuantas tareas pendientes tienes hoy. </li>
+                <li><img src="./img/check.png" height="50px" width="50px"> Este símbolo recuenta cuantas tareas realizaste hoy.</li>
             </ul>
             <img class="mb-5" src="./img/banner.png" width="100%">
 
@@ -78,6 +78,31 @@
             <p>La novedad con la última actualización es que hora podemos poner nuestros tiempos en pantalla a través del comando !focus + los minutos que necesitemos. Esto te permite manejar los tiempos a tu manera sin necesidad de depender del timer del directo. Será utilizado en futuras emisiones donde el streamer no pueda hablar por estar en una reunión o simplemente trabajando, para que puedas gestionarte a tu manera. Estos tiempos figuran en la pantalla del stream. Con avisos en el chat de inicio y final del pomo, a su vez con una alerta en pantalla de algún gif celebrando el final de tu tiempo productivo.</p>
             <img class="mb-5 img-fluid" src="./img/timers.png">
             <img class="mb-5 img-fluid" src="./img/focus10.png" width="100%">
+
+            <h2 class="mt-5">BRUNOPET:  Estados</h2>
+            <p> Muchas veces en el chat habrá gente interesada en saber que estudias o a que te dedicas, que pueden estar generadas por las interacciones que se dan en los directos, así que hemos pensado en crear un perfil para que ingresando  !estado puedas dar una respuesta rápida y de manera breve. </p>
+            <p>Este perfil debe  ser completado por ti, para ello puedes ingresar:</p>
+            <ul class="contenedorLista">
+                <li> <b>!actividad</b> + texto referido a qué estudias, trabajas o desarrollas como actividad diaria. Es importante que seas breve. </li>
+                <li><b>!nacimiento</b> + Más la fecha de tu nacimiento (no importa el formato ya que BrunitoPet no interactuara con este dato)</li>
+                <li><b>!signo</b> + tu signo zodiacal </li>
+                <li><b>!nacionalidad</b> + texto de tu nacionalidad o nacionalidades que poseas</li>
+                <li><b>!instagram</b> + texto del nombre del perfil. </li>
+            </ul>
+
+            <h2 class="mt-5">BRUNOPOINTS</h2>
+            <p> Estos son los premios que puedes cambiar con los puntos de Brunito:</p>
+            <ul class="contenedorLista">
+                <li> <b>Guiar raid (solo Study with me) 30.000 Pts.</b></li>
+                <li> <b>Stream dedicado a ti 50.000 Pts.</b></li>
+                <li> <b>Karaoke 50.000 (no temas sad) Pts.</b></li>
+                <li> <b>Comando de sonido personalizado 60.000 Pts.</b></li>
+                <li> <b>Personalizar tú listas de tareas 80.000 Pts.</b></li>
+                <li> <b>Moderador por un mes 100.000 Pts.</b></li>
+                <li> <b>Una cita con chenz 1.000.000 Pts.</b></li>
+                <li> <b>Una cita con Brunito 10.000.000 Pts.</b></li>
+            </ul>
+
 
         </div>
 
@@ -94,8 +119,8 @@
                 <li class="list-group-item itemText"> !lista
                     <button value="!lista" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
-                <li class="list-group-item itemText"> !reset 
-                    <button value="!reset" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                <li class="list-group-item itemText"> !delete 
+                    <button value="!delete" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
                 <li class="list-group-item itemText"> !pickup
                     <button value="!pickup" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
@@ -105,6 +130,21 @@
                 </li>
                 <li class="list-group-item itemText"> !focus 25
                     <button value="!focus 25" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !actividad 
+                    <button value="!actividad" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !nacimiento
+                    <button value="!nacimiento" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !signo
+                    <button value="!signo" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !nacionalidad
+                    <button value="!nacionalidad" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
+                </li>
+                <li class="list-group-item itemText"> !instagram
+                    <button value="!instagram" type="button" class="btn btn-success"><i class="bi bi-clipboard-minus"></i></button>
                 </li>
             </ul>
         </div>
